@@ -10,7 +10,7 @@ using TuboShop.Model.Abstract;
 namespace TuboShop.Model.Models
 {
     [Table("Pages")]
-    class Page : Auditable
+    public class Page : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

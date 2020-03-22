@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TuboShop.Model.Models
 {
     [Table("SupportOnlines")]
-    class SupportOnline
+    public class SupportOnline
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TuboShop.Model.Models
 {
     [Table("PostTags")]
-    class PostTag
+    public class PostTag
     {
         [Key]
         public int PostID { set; get; }
@@ -20,7 +20,7 @@ namespace TuboShop.Model.Models
         public string TagID { set; get; }
 
         [ForeignKey("PostID")]
-        public virtual Post Post { set; get; }
+        public virtual Footer Post { set; get; }
 
         [ForeignKey("TagID")]
         public virtual Tag Tag { set; get; }

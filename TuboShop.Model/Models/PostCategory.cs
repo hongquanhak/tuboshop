@@ -10,7 +10,7 @@ using TuboShop.Model.Abstract;
 namespace TuboShop.Model.Models
 {
     [Table("PostCategories")]
-    class PostCategory : Auditable
+    public class PostCategory : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -37,6 +37,6 @@ namespace TuboShop.Model.Models
 
         public bool? HomeFlag { set; get; }
 
-        public virtual IEnumerable<Post> Posts { set; get; }
+        public virtual IEnumerable<Footer> Posts { set; get; }
     }
 }

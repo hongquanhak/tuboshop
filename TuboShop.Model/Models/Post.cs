@@ -10,7 +10,7 @@ using TuboShop.Model.Abstract;
 namespace TuboShop.Model.Models
 {
     [Table("Posts")]
-    class Post : Auditable
+    public class Post : Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
