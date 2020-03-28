@@ -37,6 +37,12 @@ namespace TuboShop.Data
         protected override void OnModelCreating(DbModelBuilder modelBuilder) //ghi de phuong thuc
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<ProductTag>().HasKey(pt => new
+            {
+                pt.ProductID,
+                pt.TagID
+            });
+
         }
     }
 }

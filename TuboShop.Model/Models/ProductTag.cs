@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TuboShop.Model.Models
 {
@@ -12,11 +7,12 @@ namespace TuboShop.Model.Models
     public class ProductTag
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Column(Order = 1)]
         public int ProductID { set; get; }
+
         [Key]
+        [Column(TypeName = "varchar", Order = 2)]
         [MaxLength(50)]
-        [Column(TypeName = "varchar")]
         public string TagID { set; get; }
 
         [ForeignKey("ProductID")]

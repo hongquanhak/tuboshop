@@ -22,22 +22,21 @@ namespace TuboShop.Model.Models
         [MaxLength(256)]
         public string Image { set; get; }
 
-        public XElement MoreImages { set; get; }
+        [Column(TypeName = "xml")]
+        public string MoreImages { set; get; }
 
         public decimal Price { set; get; }
 
         public decimal? PromotionPrice { set; get; }
-
         public int? Warranty { set; get; }
+
         [MaxLength(500)]
         public string Description { set; get; }
 
         public string Content { set; get; }
 
         public bool? HomeFlag { set; get; }
-
         public bool? HotFlag { set; get; }
-
         public int? ViewCount { set; get; }
 
         [ForeignKey("CategoryID")]

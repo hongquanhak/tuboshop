@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace TuboShop.Data.Infrastructure
 {
     //trien khai cac phuong thuc da duoc dinh nghia trong IRepository
-    public abstract class RepositoryBase<T> where T : class
+    public abstract class RepositoryBase<T> : IRepository<T> where T : class
     {
         #region Properties
         private TuboShopDbContext dataContext;
