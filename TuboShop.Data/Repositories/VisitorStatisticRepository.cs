@@ -3,7 +3,7 @@ using TuboShop.Model.Models;
 
 namespace TuboShop.Data.Repositories
 {
-    public interface IVisitorStatisticRepository
+    public interface IVisitorStatisticRepository : IRepository<VisitorStatistic>
     {
     }
 

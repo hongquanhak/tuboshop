@@ -3,7 +3,7 @@ using TuboShop.Model.Models;
 
 namespace TuboShop.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository : IRepository<PostCategory>
     {
     }
 

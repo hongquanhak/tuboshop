@@ -3,11 +3,11 @@ using TuboShop.Model.Models;
 
 namespace TuboShop.Data.Repositories
 {
-    public interface IOrderRepository
+    public interface IOrderRepository : IRepository<Order>
     {
     }
 
-    public class OrderRepository : RepositoryBase<Order>, IOrderDetailRepository
+    public class OrderRepository : RepositoryBase<Order>, IOrderRepository
     {
         public OrderRepository(IDbFactory dbFactory) : base(dbFactory)
         {
