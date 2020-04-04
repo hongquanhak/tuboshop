@@ -28,7 +28,7 @@ namespace TuboShop.Model.Models
         [MaxLength(500)]
         public string Description { set; get; }
 
-        public int? Parent { set; get; }
+        public int? ParentID { set; get; }
         public int? DisplayOrder { set; get; }
 
         [MaxLength(256)]
